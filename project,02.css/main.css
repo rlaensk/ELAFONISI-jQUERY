@@ -1,0 +1,1502 @@
+@charset "utf-8";
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "SUIT-Regular";
+}
+/* 슬라이더 */
+
+#popup {
+  width: 1000px;
+  height: 554px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  z-index: 15000;
+  opacity: 1;
+}
+.pop1 {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  left: 0;
+}
+.pop2 {
+  position: absolute;
+  width: 500px;
+  display: flex;
+  right: 0;
+}
+.pop1 #close1,
+.pop2 #close2 {
+  position: absolute;
+  right: 0;
+}
+
+#slider {
+  width: 100vw;
+  height: 109vh;
+  position: relative;
+  z-index: 800;
+  top: -107px;
+  left: 0;
+}
+.slider_vieeo {
+  width: 100vw;
+  height: 109vh;
+}
+@media screen and(max-aspect-ratio: 3/2) {
+  #slider video {
+    width: auto;
+    height: 100vh;
+  }
+}
+#slider video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.mini_slider {
+  display: none;
+}
+.mid_slider {
+  display: none;
+}
+.mid2_slider {
+  display: none;
+}
+#slider_text {
+  width: 100%;
+  height: 626px;
+  position: relative;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: -4%;
+}
+.slider_text1 {
+  font-size: 7vw;
+  width: 55%;
+  position: absolute;
+  top: 67%;
+  right: 20%;
+  text-align: center;
+}
+.slider_text1 span {
+  font-family: "Prata";
+  color: white;
+}
+.slider_text2 {
+  width: 19%;
+  font-size: 1em;
+  line-height: 20px;
+  position: absolute;
+  bottom: -36%;
+  right: 10%;
+  font-weight: lighter;
+  color: whitesmoke;
+  opacity: 0.9;
+}
+.btn1 {
+  width: 24%;
+  line-height: 30px;
+  position: absolute;
+  bottom: -30%;
+  right: 1%;
+  letter-spacing: 4px;
+  font-size: 0.8vw;
+  display: flex;
+}
+.btn1 a {
+  position: absolute;
+  top: 101px;
+}
+.btn1 a span {
+  color: whitesmoke;
+}
+.btn-border {
+  width: 60%;
+  height: 236px;
+  right: 82%;
+  top: 328%;
+  position: absolute;
+}
+.btn1 .triangle {
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-left: 22px solid #adb8c0;
+  border-right: 10px solid transparent;
+  border-bottom: 17px solid transparent;
+}
+
+/* pool villa */
+
+#about {
+  width: 100%;
+  height: 1254px;
+}
+#about_line {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#about_text {
+  width: 47%;
+  height: 605px;
+  position: relative;
+}
+#about_line > p {
+  width: 36%;
+  font-size: 9em;
+  font-family: "Jeju Myeongjo", serif;
+  font-weight: bold;
+  position: absolute;
+  top: 19%;
+  right: 58%;
+  z-index: 100;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
+  line-height: 135px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#about_text .but {
+  width: 45%;
+  position: absolute;
+  bottom: -8%;
+  left: 32%;
+  line-height: 22px;
+  font-size: 1em;
+  color: rgb(138, 138, 138);
+  opacity: 0;
+}
+
+#about_img {
+  width: 50%;
+  height: 1000px;
+  position: relative;
+  z-index: 100;
+}
+.about_box {
+  width: 107%;
+  height: 1000px;
+  background-color: #f9efe9;
+  position: absolute;
+  top: 155px;
+  left: -9px;
+}
+
+#about_img img {
+  width: 73%;
+  height: 502px;
+  position: absolute;
+  bottom: 10%;
+  left: 23%;
+}
+
+.btn2 {
+  width: 86%;
+  line-height: 30px;
+  position: absolute;
+  top: 814px;
+  left: 175px;
+  letter-spacing: 4px;
+  display: flex;
+}
+.btn2 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+  border-radius: 2px;
+  position: relative;
+}
+.btn2 a span {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 0.8rem;
+  color: #323232;
+  transition: all 0.3s;
+}
+
+.btn2 a > span:hover {
+  transform: scale(1.2);
+}
+.btn-border1 {
+  width: 54%;
+  height: 181px;
+  right: 62%;
+  top: 142px;
+  opacity: 0.5;
+  position: absolute;
+}
+.line[data-v-5d883f52] {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -2;
+  max-width: 100%;
+}
+.line[data-v-5d883f52],
+.line__border[data-v-5d883f52] {
+  position: absolute;
+  top: -100px;
+}
+.line__border[data-v-5d883f52] {
+  width: 1px;
+  border-left: 1px solid rgba(58, 58, 57, 0.2);
+  transform-origin: 0 0;
+}
+
+/* hotel-room */
+#room_kind {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.room_see {
+  width: 185px;
+  height: 50px;
+  position: absolute;
+  right: 200px;
+  bottom: 90px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 13px;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+  border-radius: 2px;
+  line-height: 50px;
+  background-color: transparent;
+}
+.room_see a {
+  color: rgb(139, 139, 139);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+.room_see a:hover {
+  color: #323232;
+  transform: scale(1.2);
+}
+#room_box {
+  width: 50%;
+  height: 836px;
+  position: relative;
+  top: 6%;
+}
+#room_box .room_img_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.room_img {
+  width: 100%;
+  height: 801px;
+  position: absolute;
+}
+
+#room_text_box {
+  width: 100%;
+  height: 631px;
+  display: flex;
+  position: absolute;
+  bottom: -16%;
+  left: 49%;
+}
+.room-text {
+  width: 67%;
+  height: 540px;
+  overflow: hidden;
+  padding: 30px;
+  background-color: #f9efe9;
+  margin: 2%;
+  position: absolute;
+}
+.room_ {
+  position: absolute;
+}
+.room3 h2 {
+  margin: 93px 0 0 0;
+}
+.room3 p {
+  margin: 75px 0 0 42%;
+}
+.room_ > h2 {
+  font-size: 3.5em;
+  font-family: "PRATA";
+  color: rgb(8, 8, 8);
+  margin: 24px;
+  margin: 85px 0;
+  text-align: center;
+}
+.room_ > p {
+  width: 47%;
+  line-height: 24px;
+  margin: 0 0 0 40%;
+  font-size: 14px;
+  color: #999;
+}
+.btn3 {
+  width: 86%;
+  line-height: 30px;
+  position: absolute;
+  bottom: -33%;
+  right: -8%;
+  letter-spacing: 4px;
+  font-size: 0.8vw;
+  display: flex;
+}
+.btn3 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 47px;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+  border-radius: 2px;
+}
+.btn3 a span {
+  font-size: 0.8rem;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  color: #323232;
+}
+.btn3 a:hover span {
+  transform: scale(1.2);
+}
+.btn-border2 {
+  width: 30%;
+  height: 132px;
+  right: 82%;
+  top: -162%;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.room-text2 {
+  position: relative;
+  width: 36%;
+}
+.room-text2 > h2 {
+  font-size: 9em;
+  width: 60%;
+  height: 230px;
+  font-family: "Jeju Myeongjo", serif;
+  color: rgb(8, 8, 8);
+  line-height: 96px;
+  font-weight: bold;
+  position: absolute;
+  right: 13%;
+  top: 7%;
+  opacity: 0;
+  line-height: 121px;
+}
+.room-text2 > p {
+  width: 54%;
+  position: absolute;
+  top: 32%;
+  right: -9%;
+  color: rgb(139, 139, 139);
+  font-size: 14px;
+  opacity: 0;
+}
+#room_box > .line__border {
+  top: 18px;
+}
+.next {
+  position: relative;
+}
+
+.next_1::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #323232;
+  border-right: 1px solid #323232;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 56%;
+  left: 145px;
+  cursor: pointer;
+}
+.next_2::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #323232;
+  border-right: 1px solid #323232;
+  display: inline-block;
+  transform: rotate(225deg);
+  position: absolute;
+  bottom: 44%;
+  left: 145px;
+  cursor: pointer;
+}
+
+.see {
+  width: 190px;
+  height: 50px;
+  position: absolute;
+  right: 159px;
+  bottom: 90px;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+}
+.see a {
+  color: #7f7872;
+  letter-spacing: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+
+  /* padding: 10px 15px; */
+  transition: all 0.3s;
+}
+.see a:hover {
+  color: #323232;
+  transform: scale(1.2);
+}
+
+#hotel_img {
+  width: 100%;
+  height: 720px;
+  position: relative;
+}
+#hotel_img img {
+  width: 90%;
+  height: 690px;
+  margin: 2% 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#ACCOMMODATION {
+  width: 100%;
+  height: 1397.09px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8% 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+.tion_box {
+  width: 43%;
+  height: 1000px;
+  position: relative;
+}
+.tion_box1 {
+  width: 57%;
+  height: 1101px;
+  background-color: #f9efe9;
+  position: absolute;
+  right: 0;
+  top: 13%;
+}
+#ACCOMMODATION h2 {
+  font-size: 8em;
+  font-family: "Jeju Myeongjo", serif;
+  font-weight: bold;
+  position: absolute;
+  left: 16%;
+  color: rgb(50, 50, 50);
+  top: -42px;
+  opacity: 0;
+}
+.tion_box p {
+  opacity: 0;
+}
+#ACCOMMODATION p {
+  width: 44%;
+  font-size: 15px;
+  position: absolute;
+  top: 17%;
+  left: 33%;
+  line-height: 28px;
+  color: rgb(139, 139, 139);
+}
+#ACCOMMODATION .img-box {
+  display: flex;
+  position: absolute;
+  width: 88%;
+  top: 42%;
+  right: 88px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#ACCOMMODATION .line[data-v-5d883f52] {
+  top: 170px;
+}
+
+#ACCOMMODATION img {
+  width: 100%;
+  height: 357px;
+}
+#infinity {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#infinity p {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  font-size: 5em;
+  font-family: "Jeju Myeongjo", serif;
+  color: rgb(50, 50, 50);
+  line-height: 76px;
+  font-weight: bold;
+}
+
+.read1,
+.read2 {
+  position: absolute;
+  top: 523px;
+  left: 0;
+  height: 50px;
+  width: 185px;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+}
+.read1 a:hover {
+  color: #323232;
+  transform: scale(1.2);
+}
+.read2 a:hover {
+  color: #323232;
+  transform: scale(1.2);
+}
+.read1 a {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  color: #7f7872;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 47px;
+  transition: all 0.3s;
+}
+
+#BBQ {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+#BBQ p {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  font-size: 5em;
+  font-family: "Jeju Myeongjo", serif;
+  line-height: 76px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
+.read2 a {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  color: #7f7872;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 47px;
+  transition: all 0.3s;
+}
+#review {
+  width: 100%;
+  height: 1009px;
+  position: relative;
+}
+.overflow_hidden {
+  width: 84%;
+  height: 888px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 2em;
+}
+#review h2 {
+  font-size: 8em;
+  font-family: "Jeju Myeongjo", serif;
+  letter-spacing: -8px;
+  position: absolute;
+  top: -1%;
+  right: 26%;
+  letter-spacing: -8px;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  opacity: 0;
+}
+#review .review_img {
+  max-width: 100%;
+  height: auto;
+}
+.review_img img {
+  width: 350px;
+  height: 400px;
+  margin: 25px;
+}
+.review_ {
+  width: 100%;
+  height: 907px;
+  margin: 0 auto;
+  position: relative;
+  top: 6%;
+}
+.review_ p {
+  font-size: 2vw;
+  font-family: "Prata";
+  color: rgb(50, 50, 50);
+  transform: translate(27%, -60px);
+  width: 23%;
+  position: absolute;
+  left: 20%;
+  bottom: 176px;
+  overflow: 0;
+}
+.see_2 {
+  position: absolute;
+  width: 185px;
+  height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 13px;
+  bottom: 206px;
+  left: 55%;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+  border-radius: 2px;
+}
+.see_2 a {
+  color: #7f7872;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.see_2 a:hover {
+  color: #000000;
+  transform: scale(1.2);
+}
+.review .line {
+  top: -133px;
+}
+
+.review_1 {
+  display: flex;
+  width: 80%;
+  height: 740px;
+  align-items: center;
+}
+
+.next_3 {
+  position: absolute;
+  bottom: 59%;
+  left: 4%;
+  color: #323232;
+  cursor: pointer;
+}
+.next_4 {
+  position: absolute;
+  bottom: 59%;
+  right: 70px;
+  color: #323232;
+  cursor: pointer;
+}
+#review .btn-border {
+  width: 20%;
+  height: 180px;
+  left: 19%;
+  top: 84%;
+  opacity: 0.5;
+}
+
+#Events {
+  width: 100%;
+  height: 1068.73px;
+  position: relative;
+  top: 100px;
+}
+#Event_s {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.eventBox {
+  width: 860px;
+  height: 860px;
+  background-color: #f9efe9;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+#Events #Event_s h2 {
+  position: absolute;
+  font-size: 9em;
+  font-family: "Jeju Myeongjo", serif;
+  font-weight: bold;
+  width: 26%;
+  right: 17%;
+  top: -118px;
+  letter-spacing: -4px;
+  color: rgb(8, 8, 8);
+  opacity: 0;
+}
+
+.see_ {
+  position: absolute;
+  width: 185px;
+  height: 50px;
+  right: 88px;
+  text-align: center;
+
+  letter-spacing: 3px;
+  font-size: 13px;
+  top: 16%;
+  border: 0.8px solid rgba(58, 58, 57, 0.2);
+  border-radius: 2px;
+  line-height: 50px;
+}
+.see_ a {
+  color: #7f7872;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.see_ a:hover {
+  transform: scale(1.2);
+}
+#slider_box {
+  position: absolute;
+  top: 224px;
+  height: 530px;
+  width: 100%;
+
+  z-index: 100;
+}
+#slider_box,
+#offer_box {
+  user-select: none; /* 텍스트 선택 방지 */
+  -webkit-user-select: none; /* 사파리 브라우저를 위한 선택 방지 */
+  -ms-user-select: none; /* IE 브라우저 선택 방지 */
+  touch-action: none; /* 터치 장치에서 제스처 방지 */
+}
+#offer_box {
+  width: 170%;
+  height: 500px;
+  position: absolute;
+
+  display: flex;
+  justify-content: space-around;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.offer_img1 {
+  display: flex;
+  width: 500px;
+  height: 100%;
+  margin: 3px;
+  position: relative;
+}
+.o_text_box {
+  position: absolute;
+  display: inline-block;
+  width: 406px;
+  top: 80%;
+  left: 0;
+  z-index: 300;
+}
+.o_text_box > p {
+  font-size: 2vw;
+  color: rgb(50, 50, 50);
+  font-family: "Jeju Myeongjo", serif;
+}
+.o_text_box > span {
+  color: rgb(138, 138, 138);
+}
+.offer_img1 img {
+  width: 100%;
+  height: 303.48px;
+  transform: translate(0, 24%);
+}
+/* .o_text_box .read3 a{ display: block; margin: 32px 0 0 5px;
+                font-size: 13px;color: rgb(138, 138, 138);} */
+
+#Events .line[data-v-5d883f52],
+.line__border[data-v-5d883f52] {
+  position: absolute;
+  top: -0.1%;
+}
+
+#newsletter {
+  width: 100%;
+  height: 688.56px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsletter_text {
+  width: 50%;
+  height: 395.56px;
+  position: relative;
+  margin: 0 auto;
+}
+.newsletter_text p {
+  width: 93%;
+  font-size: 3em;
+  position: absolute;
+  right: -10px;
+  text-align: right;
+  font-family: "Prata";
+  color: rgb(50, 50, 50);
+  line-height: 51px;
+  opacity: 0;
+}
+.newsletter_text span {
+  position: absolute;
+  bottom: 39%;
+  left: 26%;
+  color: rgb(138, 138, 138);
+  opacity: 0;
+}
+#form {
+  width: 50%;
+  height: 395px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#form input {
+  width: 90%;
+  height: 26px;
+  margin: 10px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(58, 58, 57, 0.2);
+}
+
+.newsletter_ {
+  width: 810px;
+  height: 298px;
+}
+form {
+  width: 82%;
+  height: 285px;
+  position: absolute;
+  font-size: 13px;
+  top: 54%;
+  left: 15%;
+  color: rgb(138, 138, 138);
+}
+
+.radio {
+  position: relative;
+}
+.radio input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.radio input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: rgb(138, 138, 138);
+  margin: 10% 0;
+}
+.radio input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid rgba(58, 58, 57, 0.2);
+  border-radius: 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+}
+.radioinput[type="radio"] + label:active:before,
+.radio input[type="radio"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.radio input[type="radio"]:checked + label:before {
+  background: #e9ecee;
+  border-color: #adb8c0;
+}
+.radio input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 13px;
+  height: 13px;
+  background: #99a1a7;
+  border-radius: 0;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.radio label a {
+  color: rgb(138, 138, 138);
+}
+form .sendBox {
+  position: absolute;
+  right: 23%;
+
+  display: flex;
+  width: 180px;
+  height: 50px;
+  border: 1px solid rgba(58, 58, 57, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+form .form_a {
+  color: rgb(139, 139, 139);
+  transition: all 0.3s;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+form .form_a:hover {
+  color: #323232;
+  transform: scale(1.2);
+}
+#neighbourhood {
+  width: 100%;
+  height: 1077px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#neighbourhood img {
+  width: 92%;
+  height: 545px;
+}
+#neighbourhood p {
+  font-size: 8em;
+  font-family: "prata";
+  position: absolute;
+  left: 25%;
+  bottom: 26%;
+  color: rgb(50, 50, 50);
+  opacity: 0;
+}
+#neighbourhood a {
+  width: 185px;
+  height: 50px;
+  position: absolute;
+  bottom: 11%;
+  right: 20%;
+  font-size: 0.8rem;
+  color: rgb(139, 139, 139);
+  letter-spacing: 4px;
+  transition: all 0.3s;
+}
+#neighbourhood a:hover {
+  color: #323232;
+}
+#neighbourhood .neig_text {
+  width: 18%;
+  position: absolute;
+  bottom: 18%;
+  right: 25%;
+  color: rgb(138, 138, 138);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#neighbourhood .see button {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #adb8c0;
+}
+#neighbourhood .see span:hover {
+  transform: scale(1.2);
+}
+#map {
+  width: 100%;
+  height: 491px;
+  position: relative;
+  transition: all 0.3s;
+}
+.map_a a:nth-child(1):hover {
+  color: #323232;
+}
+.map_a a:nth-child(2):hover {
+  color: #323232;
+}
+#video {
+  width: 90%;
+  height: 491px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.background_after {
+  width: 100%;
+  height: 387px;
+}
+.background_after::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  z-index: 5;
+}
+#map .line {
+  top: 70px;
+}
+#map > p {
+  font-size: 5em;
+  position: absolute;
+  z-index: 10;
+  width: 48%;
+  text-align: right;
+  font-family: "prata";
+  left: 5%;
+  top: 16%;
+  line-height: 87px;
+  opacity: 0;
+}
+.map_a {
+  display: flex;
+  flex-wrap: wrap;
+  width: 54%;
+  z-index: 100;
+  color: rgb(50, 50, 50);
+  position: absolute;
+  bottom: 18%;
+  left: 23%;
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+.map_a > a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.map_a > a {
+  color: rgb(50, 50, 50);
+}
+.map_a a:nth-child(2) {
+  width: 257px;
+  position: absolute;
+  left: 33%;
+}
+.map_a a:nth-child(2)::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  height: 8px;
+}
+
+#about_hotel {
+  width: 100%;
+  height: 191px;
+}
+#about_hotel a {
+  font-size: 6em;
+  font-family: "prata";
+  position: absolute;
+  left: 39%;
+  top: 79px;
+  color: rgb(8, 8, 8);
+}
+
+/* 애니메이션 */
+
+@keyframes pool {
+  from {
+    right: -5%;
+  }
+  to {
+    right: 58%;
+  }
+}
+@keyframes pool_p {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 32%;
+  }
+}
+@keyframes pool_p1 {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes pool_p_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 10%;
+  }
+}
+@keyframes hotel {
+  from {
+    right: -60%;
+  }
+  to {
+    right: 13%;
+  }
+}
+@keyframes see {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 3%;
+  }
+}
+@keyframes see_ {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 24%;
+  }
+}
+
+@keyframes hotel_p {
+  from {
+    right: 30%;
+  }
+  to {
+    right: -9%;
+  }
+}
+@keyframes neibg {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 25%;
+  }
+}
+@keyframes fac {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 16%;
+  }
+}
+@keyframes fac_p {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 33%;
+  }
+}
+@keyframes fac_p_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 3%;
+  }
+}
+@keyframes fac_p_1 {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 2%;
+  }
+}
+
+@keyframes infi {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes infi_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 10%;
+  }
+}
+
+@keyframes infi1_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 0.5%;
+  }
+}
+@keyframes rew {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 26%;
+  }
+}
+@keyframes rew_ {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 9%;
+  }
+}
+
+@keyframes rew_ {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 25%;
+  }
+}
+@keyframes rew__ {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes rew1 {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 20%;
+  }
+}
+@keyframes rew11 {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 66%;
+  }
+}
+@keyframes rew_p {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 12%;
+  }
+}
+@keyframes rew_p_ {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 6%;
+  }
+}
+@keyframes rew_p1 {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 78%;
+  }
+}
+
+@keyframes infi1 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 57%;
+  }
+}
+@keyframes infi2 {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 8%;
+  }
+}
+@keyframes infi2_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 22%;
+  }
+}
+@keyframes event {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 22%;
+  }
+}
+@keyframes event1 {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 2%;
+  }
+}
+@keyframes event2 {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 79%;
+  }
+}
+@keyframes event2_ {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes news {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 10%;
+  }
+}
+@keyframes news2 {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 50%;
+  }
+}
+@keyframes news2_ {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 26%;
+  }
+}
+@keyframes news2__ {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 6%;
+  }
+}
+@keyframes map {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 5%;
+  }
+}
+@keyframes radio {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 5%;
+  }
+}

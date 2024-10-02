@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAFONISI</title>
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="project,02.css/main.css" />
+    <link rel="stylesheet" href="project,02.css/min.max-widhtpx.css" />
+    <link rel="stylesheet" href="project,02.css/common.css" />
+    <!-- -->
+
+    <!-- jQuery 라이브러리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI 라이브러리 (draggable() 함수 사용을 위해 필요) -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Lodash 라이브러리 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- jQuery UI CSS (스타일 적용을 위해 선택 사항) -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"
+      integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="pa/favicon(3).ico" />
+    <link rel="apple-touch-icon" sizes="60x60" href="pa/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="pa/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="pa/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="pa/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="pa/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="pa/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="pa/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="pa/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="pa/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="pa/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="pa/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="pa/favicon-16x16.png"
+    />
+    <link rel="manifest" href="pa/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="top">
+        <header>
+          <div id="header_manu">
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <button class="country_toggle dropdow_one">
+              <span class="dropdown_label">EN</span>
+              <span class="arrow"></span>
+            </button>
+            <ul class="dropdown_menu" id="a">
+              <li><a href="#">EN</a></li>
+              <li><a href="#">UA</a></li>
+            </ul>
+          </div>
+
+          <div id="logo">
+            <a class="logo_text" href="index.html">
+              <p>ELAFONISI</p>
+              <p>Cyeong Ju Hotel</p>
+            </a>
+          </div>
+
+          <div id="CS_num">
+            <div id="CS_toggle">
+              <button class="cstoggle">
+                <span class="dropdown_label">HOT CALL</span>
+                <span class="arrow"></span>
+              </button>
+              <ul class="csdropdown">
+                <li>
+                  <a class="cs_text" href="tel:054-741-5000">054-741-5000</a>
+                </li>
+                <li>
+                  <a class="cs_text" href="tel:010-9767-4411">010-9767-4411</a>
+                </li>
+                <li>
+                  <a class="cs_text" href="tel:010-5302-4411">010-5302-4411</a>
+                </li>
+                <li class="cs_img">
+                  <a href="#"><img src="img/ins.png" alt="" /></a>
+                  <a href="#"><img src="img/tel.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div id="book_tap">
+              <a href="sub.html"> BOOK NOW</a>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- 햄버거버튼 누르면 나오는 메뉴 -->
+
+      <div id="menu_trigger">
+        <div class="menu_trigger_s">
+          <div class="menu_s">
+            <div id="about_us" class="about_us">
+              <div class="menu_s_">
+                <p><a href="">About Us</a></p>
+                <div class="plus plus1">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <nav class="menu_nav nav1">
+                <ul>
+                  <li><a href=""> EXTEPIOR</a></li>
+                  <li><a href="">LOCATION</a></li>
+                  <li><a href="">TRAVEL</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div id="accom" class="about_us">
+              <div class="menu_s_">
+                <p><a style="margin: 2% 0" href="">Accommodation</a></p>
+
+                <div class="plus plus2">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <nav class="menu_nav nav2">
+                <ul>
+                  <li><a href="sub.html">객실 미리보기</a></li>
+                  <li><a href="sub.html">POOL&SPVAVILLA</a></li>
+                  <li><a href="sub.html">SPAVILLA</a></li>
+                  <li><a href="sub.html">POOLVILLA</a></li>
+                  <li><a href="sub.html">ROYAL SULTE</a></li>
+                  <li><a href="sub.html">SUITE</a></li>
+                  <li><a href="sub.html">DELUX TWIN SPA</a></li>
+                  <li><a href="sub.html">DELUX TWIN</a></li>
+                  <li><a href="sub.html">DELUX DOBLE SPA</a></li>
+                  <li><a href="sub.html">DELUX DOUBLE</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="special" class="about_us">
+              <div class="menu_s_">
+                <p><a href="">Special</a></p>
+                <div class="plus plus3">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <nav class="menu_nav nav3">
+                <ul>
+                  <li><a href="">스페셜 미리보기</a></li>
+                  <li><a href="">Infinity Pool</a></li>
+                  <li><a href="">Private Pool</a></li>
+                  <li><a href="">Rooftop Poll</a></li>
+                  <li><a href="">Breakfast &amp; BBQ</a></li>
+                  <li><a href="">SPA</a></li>
+                  <li><a href="">Pets Allowed</a></li>
+                  <li><a href="">CAFE</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="offers" class="about_us">
+              <div class="menu_s_">
+                <p><a href=""> Offers</a></p>
+                <div class="plus plus4">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              <nav class="menu_nav nav4">
+                <ul>
+                  <li><a href="">SPECIAL OFFER</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="community" class="about_us">
+              <div class="menu_s_">
+                <p><a style="margin: 2% 0" href="">Community</a></p>
+                <div class="plus plus5">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              <nav class="menu_nav nav5">
+                <ul>
+                  <li><a href="">NOTICE</a></li>
+                  <li><a href="">REVIEW</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="reservation" class="about_us">
+              <div class="menu_s_">
+                <p><a style="margin: 1% 0" href="">Reserbaion</a></p>
+                <div class="plus plus6">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <nav class="menu_nav nav6">
+                <ul>
+                  <li><a href="">RESERVATION</a></li>
+                  <li><a href="">GUIDE</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="side_footer">
+              <div class="call_">
+                <p>Call to us 24/7</p>
+                <span
+                  ><a
+                    href="tel:0504-741-5000"
+                    style="
+                      text-decoration: underline;
+                      letter-spacing: 2px;
+                      color: rgb(50, 50, 50);
+                    "
+                    >0504 741 5000</a
+                  ></span
+                >
+              </div>
+              <div class="follow_us">
+                <p>Follow_us :</p>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/facebook-icon.svg"
+                        alt="facebook-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.google.com.ua/maps/place/%EA%B2%BD%EC%A3%BC+%EC%97%98%EB%9D%BC%ED%8F%AC%EB%8B%88%EC%8B%9C+%ED%98%B8%ED%85%94/data=!3m1!4b1!4m8!3m7!1s0x356651ed25f9f9c7:0xf0b2fbebd4df265d!5m2!4m1!1i2!8m2!3d35.8804563!4d129.2249237?hl=en&authuser=0"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/google-icon.svg"
+                        alt="google-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/elafonisi_gyeongju/"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/instagram-icon.svg"
+                        alt="instagram-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/twitter-icon.svg"
+                        alt="twitter-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/linked-icon.svg"
+                        style="margin-top: 4px"
+                        alt="linked-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://11mirrors-hotel.com/img/youtube-icon.svg"
+                        alt="yoytube-icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cradit">
+                <ul>
+                  <li>
+                    <img
+                      src="https://11mirrors-hotel.com/img/visa-logo.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://11mirrors-hotel.com/img/master-card-logo.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://11mirrors-hotel.com/img/master-card-logo.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://11mirrors-hotel.com/img/express-logo.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup">
+        <div class="pop1">
+          <div id="close1">
+            <a href="#"
+              ><img
+                src="http://rudrms1555.speedgabia.com/popup/pop_close.png"
+                alt=""
+            /></a>
+          </div>
+          <a href="#"
+            ><img src="http://woc145.cafe24.com/pop2.jpg" alt="" width="400"
+          /></a>
+        </div>
+
+        <div class="pop2">
+          <div id="close2">
+            <a href="#"
+              ><img
+                src="http://rudrms1555.speedgabia.com/popup/pop_close.png"
+                alt=""
+            /></a>
+          </div>
+          <a href="#"
+            ><img src="http://woc145.cafe24.com/pop1.jpg" width="500" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div id="slider">
+        <div class="slider_vieeo">
+          <video src="img/엘라포니시_수정.mp4" autoplay muted loop></video>
+          <img class="mini_slider" src="img/mi-nislider1.PNG" alt="" />
+          <img
+            class="mid_slider"
+            src="http://minjun1555.speedgabia.com/_elafonisi/main/18.jpg"
+            alt=""
+          />
+          <img
+            class="mid2_slider"
+            src="http://minjun1555.speedgabia.com/_elafonisi/special/1/10.jpg"
+            alt=""
+          />
+          <div id="slider_text">
+            <div class="slider_text1">
+              <span>ELAFONISI<br />Poolvilla Hotel</span>
+            </div>
+
+            <div class="slider_text2">
+              Your safety and comfort are our priorities. You can familiarize
+              yourself with the implemented measures
+              <a
+                style="text-decoration: underline; color: rgb(205, 205, 205)"
+                href="#"
+                >here.</a
+              >
+            </div>
+
+            <div class="btn1">
+              <a href="img/video.mp4">
+                <span>WATCH THE FILM</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div id="about_line">
+          <p>Pool Villa<br />Room</p>
+          <div id="about_text">
+            <span class="but">
+              Elaponisi is a pool villa &amp; hotel located in Gyeongju, where
+              you can enjoy the ocean view accommodation, private individual
+              spas and swimming pools, and a rooftop with an artful view.
+            </span>
+            <div class="btn2">
+              <a href="#">
+                <span>BOOK NOW</span>
+              </a>
+            </div>
+          </div>
+          <div id="about_img">
+            <div class="about_box"></div>
+            <img src="img/poolvilla.PNG" alt="" />
+          </div>
+
+          <div class="line" data-v-5d883f52>
+            <div
+              class="line__border"
+              style="
+                right: 10%;
+                transform: rotate3d(0, 0, 1, 70deg);
+                height: 300%;
+              "
+              data-v-5d883f52
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div id="room_kind">
+        <div id="room_box">
+          <div class="room_img_box">
+            <img
+              class="room_img"
+              src="http://minjun1555.speedgabia.com/_elafonisi/room/4/1.jpg"
+              alt=""
+            />
+            <img
+              class="room_img"
+              src="http://minjun1555.speedgabia.com/_elafonisi/room/5/3.jpg"
+              alt=""
+            />
+            <img
+              class="room_img"
+              src="http://minjun1555.speedgabia.com/_elafonisi/room/6/1.jpg"
+              alt=""
+            />
+            <img
+              class="room_img"
+              src="http://minjun1555.speedgabia.com/_elafonisi/room/9/1.jpg"
+              alt=""
+            />
+          </div>
+          <div id="room_text_box">
+            <div class="room-text">
+              <div class="room_ room1">
+                <h2>Royal Suite</h2>
+                <p>
+                  Elegant space with stunning panoramic views and individual
+                  swimming pools for relaxation and privacy adsf
+                </p>
+                <div class="btn3">
+                  <a href="#"><span>BOOK NOW</span></a>
+                </div>
+              </div>
+
+              <div class="room_ room2">
+                <h2>Suite Room</h2>
+                <p>
+                  Elegant space with stunning panoramic views and individual
+                  swimming pools for relaxation and privacy qwer
+                </p>
+                <div class="btn3">
+                  <a href="sub.html"
+                    ><span style="color: #7f7872">BOOK NOW</span></a
+                  >
+                </div>
+              </div>
+
+              <div class="room_ room3">
+                <h2>Delux Twin Spa</h2>
+                <p>
+                  Elegant space with stunning panoramic views and individual
+                  swimming pools for relaxation and privacy q fgs
+                </p>
+                <div class="btn3">
+                  <a href="sub.html"
+                    ><span style="color: #7f7872">BOOK NOW</span></a
+                  >
+                </div>
+              </div>
+
+              <div class="room_ room4">
+                <h2>Delux Double</h2>
+                <p>
+                  Elegant space with stunning panoramic views and individual
+                  swimming pools for relaxation and privacy fgrewr
+                </p>
+                <div class="btn3">
+                  <a href="sub.html"
+                    ><span style="color: #7f7872">BOOK NOW</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room-text2">
+          <h2>Hotel<br />Room</h2>
+          <p>With an open ocean view, you can get refreshed</p>
+        </div>
+        <div class="next">
+          <span class="next_1"></span>
+          <span class="next_2"></span>
+        </div>
+
+        <div class="line" data-v-5d883f52>
+          <div
+            class="line__border"
+            style="right: 0; transform: rotate3d(0, 0, 1, 70deg); height: 300%"
+            data-v-5d883f52
+          ></div>
+        </div>
+
+        <button class="room_see">
+          <a href="sub.html">SEE MORE</a>
+        </button>
+      </div>
+
+      <div id="hotel_img">
+        <img src="img/hotelimg.PNG" alt="" />
+      </div>
+
+      <div id="ACCOMMODATION">
+        <div class="tion_box">
+          <h2>Facility</h2>
+          <p>
+            elraponisieneun dahamkke jeulgil ssu inneun infinitipulgwa
+            peuraibitage jeulgil ssu inneun gaebyol suyongjang osyonbyureul
+            bomyo jeulgil ssu inneun rupeutabi junbidweo itsseumnida
+          </p>
+        </div>
+        <div class="tion_box1"></div>
+        <div class="img-box">
+          <div id="infinity">
+            <a href="#"><img src="img/inpinity.PNG" alt="" /></a>
+            <p>Infinity &amp <br />Rooftop Pool</p>
+            <span class="read1"><a href="">READ MORE</a> </span>
+          </div>
+          <div id="BBQ">
+            <a href="#"><img src="img/roof_top.PNG" alt="" /></a>
+            <p>Breakfast&<br />BBQ</p>
+            <span class="read2"><a href="">READ MORE</a></span>
+          </div>
+        </div>
+
+        <div class="line" data-v-5d883f52 style="z-index: 3">
+          <div
+            class="line__border"
+            style="left: 0%; transform: rotate3d(0, 0, 1, -70deg); height: 300%"
+            data-v-5d883f52=""
+          ></div>
+        </div>
+      </div>
+
+      <div id="review">
+        <h2>Reviews</h2>
+        <div class="overflow_hidden">
+          <span class="next_3"> &lt;</span>
+          <div class="review_">
+            <div class="review_1">
+              <div class="review_img"><img src="img/review.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review2.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review3.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review4.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review5.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review6.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review7.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review8.PNG" alt="" /></div>
+              <div class="review_img"><img src="img/review9.PNG" alt="" /></div>
+              <div class="review_img">
+                <img src="img/review10.PNG" alt="" />
+              </div>
+              <div class="review_img">
+                <img src="img/review11.PNG" alt="" />
+              </div>
+              <div class="review_img"><img src="img/review6.PNG" alt="" /></div>
+            </div>
+
+            <p>Instargram Review</p>
+          </div>
+          <span class="next_4"> &gt;</span>
+        </div>
+
+        <div class="see_2">
+          <a href="sub.html">SEE MORE</a>
+        </div>
+
+        <div class="line" data-v-5d883f52>
+          <div
+            class="line__border"
+            style="right: 0; transform: rotate3d(0, 0, 1, 70deg); height: 300%"
+            data-v-5d883f52
+          ></div>
+        </div>
+      </div>
+
+      <!-- slider offer -->
+      <div id="Events">
+        <div id="Event_s">
+          <h2>
+            Special<br />
+            Offers
+          </h2>
+
+          <div class="see_">
+            <a href="sub.html">SEE MORE</a>
+          </div>
+
+          <div id="slider_box" data-slide-duration="600">
+            <div id="offer_box">
+              <a class="offer_img1" href="sub.html">
+                <img src="img/offer1.PNG" alt="" />
+                <div class="o_text_box">
+                  <p>Breakfasy&BBQ</p>
+                  <span
+                    >Start the day with breakfast cooked by the best chef in
+                    Gyeongju
+                  </span>
+                </div>
+              </a>
+              <a class="offer_img1" href="sub.html">
+                <img src="img/offer2.PNG" alt="" />
+                <div class="o_text_box">
+                  <p>Free warm water</p>
+                  <span
+                    >We provide free lukewarm water for individual swimming
+                    pools.</span
+                  >
+                </div>
+              </a>
+              <a class="offer_img1" href="sub.html">
+                <img src="img/offer3.jpg" alt="" />
+                <div class="o_text_box">
+                  <p>CAMERA RENTAL</p>
+                  <span
+                    >We lend you Polaroids for your happy moments!<br /><br
+                  /></span>
+                </div>
+              </a>
+              <a class="offer_img1" href="sub.html">
+                <img src="img/offer4.jpg" alt="" />
+                <div class="o_text_box">
+                  <p>Pickup service</p>
+                  <span
+                    >Pick-up service for the squeaky kids! Have a comfortable
+                    trip without a car!
+                  </span>
+                </div>
+              </a>
+              <a class="offer_img1" href="sub.html">
+                <img src="img/winter.jpg" alt="" />
+                <div class="o_text_box">
+                  <p>Winter vacation event</p>
+                  <span>Save up to 20% on phone reservations!</span>
+                </div>
+              </a>
+              <a class="offer_img1" href="sub.html">
+                <img src="img/buble.PNG" alt="" />
+                <div class="o_text_box">
+                  <p>Bubble party</p>
+                  <span
+                    >Enjoy an unforgettable night at Ella Ponish's bubble
+                    party</span
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="read_box"></div>
+          </div>
+        </div>
+        <div class="line" data-v-5d883f52 style="z-index: 3">
+          <div
+            class="line__border"
+            style="left: 0%; transform: rotate3d(0, 0, 1, -70deg); height: 300%"
+            data-v-5d883f52=""
+          ></div>
+        </div>
+        <div class="eventBox"></div>
+      </div>
+
+      <div id="newsletter">
+        <div class="newsletter_text">
+          <p>Would you like to receive lifestyle news and special offers?</p>
+
+          <span>Subscribe to Elafonisi newsletter</span>
+        </div>
+
+        <div id="form">
+          <form>
+            name<br />
+            <input type="text" name="name" value="" /><br />
+            E-mail<br />
+            <input type="email" name="E-mail" value="" /><br />
+
+            <div class="radio">
+              <input type="radio" name="check" value="check" id="radio_btn" />
+              <label for="radio_btn">
+                I agree to the terms of this
+                <a href="" style="text-decoration: underline"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+
+            <div class="sendBox">
+              <button class="form_a" href="">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="neighbourhood">
+        <div class="nei_img_ov">
+          <img src="img/nei.jpg" alt="" />
+        </div>
+        <p>Neighbourhood</p>
+        <span class="neig_text"
+          >Discover sights, attractions, shopping malls, high end nightlife, as
+          well as cultural and entertainment activities offered by the
+          neighborhood.</span
+        >
+
+        <button class="see" href="#"><a>EXPLORE</a></button>
+
+        <div class="line" data-v-5d883f52>
+          <div
+            class="line__border"
+            style="right: 0; transform: rotate3d(0, 0, 1, 70deg); height: 300%"
+            data-v-5d883f52
+          ></div>
+        </div>
+      </div>
+
+      <div id="map">
+        <div id="video">
+          <video src="img/map.mp4" autoplay muted loop></video>
+          <div class="background_after"></div>
+        </div>
+
+        <p>Discover new emotions and to be inspired by the local atmosphere</p>
+
+        <div class="map_a">
+          <a href="sub.html"> BOOK NOW</a>
+          <a
+            href="https://map.naver.com/v5/search/%EC%97%98%EB%9D%BC%ED%8F%AC%EB%8B%88%EC%8B%9C/place/1768852276?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14414123.8263078,4266565.0554628,15,0,0,0,dh"
+          >
+            ELAFONISI ON THE MAP</a
+          >
+        </div>
+
+        <div class="line" data-v-5d883f52>
+          <div
+            class="line__border"
+            style="left: 0%; transform: rotate3d(0, 0, 1, -70deg); height: 300%"
+            data-v-5d883f52=""
+          ></div>
+        </div>
+      </div>
+      <div id="about_hotel">
+        <a href="#">About Hotel ➝</a>
+      </div>
+
+      <footer>
+        <p>&#169; ELAFONISI</p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
